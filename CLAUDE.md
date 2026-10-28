@@ -33,4 +33,11 @@ Ejecuta lo que exista en el proyecto: `npm run build`, `npm run lint`, `astro ch
 
 ## Agentes especializados
 
-Están en `.claude/agents/`. Ver `.claude/agents/README.md` para cuál usar y en qué orden.
+Están en `.claude/agents/`. Trece, en dos grupos:
+
+- **Construcción**: `cms-contenido`, `ui-designer`, `copy-web`, `frontend-builder`,
+  `animaciones-motion`, `formularios-integraciones`.
+- **Revisión y lanzamiento**: `responsive-qa`, `accesibilidad-a11y`, `seo-tecnico`,
+  `performance-cwv`, `analitica-tracking`, `deploy-check`, `migracion-relanzamiento`.
+
+Ver `.claude/agents/README.md` para cuál usar, en qué orden y quién hace qué cuando se solapan.
