@@ -1,6 +1,14 @@
-# Websites — convenciones del repositorio
+# Websites — convenciones de desarrollo web
 
-Monorepo de proyectos web (agencia). Cada sitio vive en su propia carpeta de primer nivel.
+Este repositorio es el **toolkit** de la agencia: los agentes de Claude Code y las
+convenciones comunes. No contiene webs de clientes.
+
+**Cada web de cliente va en su propio repositorio privado**, con el plugin `web-agents`
+instalado (`/plugin marketplace add narcayac/Websites` y `/plugin install web-agents@narcayac`).
+Así los despliegues y los accesos son independientes, se le puede dar acceso a un cliente
+solo a lo suyo, y nada confidencial acaba en un repositorio público.
+
+Las convenciones de abajo aplican a todos esos proyectos.
 
 ## Stack por defecto
 

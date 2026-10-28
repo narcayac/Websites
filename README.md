@@ -1,8 +1,8 @@
 # Websites — agentes de Claude Code para desarrollo web
 
-Monorepo de proyectos web de la agencia. Cada sitio vive en su propia carpeta de primer
-nivel, y el repositorio incluye **trece agentes especializados** de Claude Code que cubren
-el ciclo completo de una web: del modelo de contenido a la revisión previa a publicar.
+Repositorio **toolkit** de la agencia: contiene los agentes de Claude Code, no webs de
+clientes (cada una va en su repositorio privado). Incluye **trece agentes especializados**
+que cubren el ciclo completo de una web: del modelo de contenido a la revisión previa a publicar.
 
 Las convenciones de código y de stack están en [`CLAUDE.md`](CLAUDE.md).
 
@@ -11,8 +11,8 @@ Las convenciones de código y de stack están en [`CLAUDE.md`](CLAUDE.md).
 Los agentes están en `.claude/agents/`. Claude los invoca solo cuando la tarea encaja con su
 `description`, o puedes pedirlos por nombre: «usa el agente `seo-tecnico` en /clinica-dental».
 
-Al trabajar dentro de este repositorio están disponibles sin instalar nada, también en las
-subcarpetas de cada proyecto.
+Al trabajar dentro de este repositorio están disponibles sin instalar nada. Para usarlos en
+el repositorio de una web de cliente, instala el plugin (abajo).
 
 ### Usarlos en otros proyectos
 
