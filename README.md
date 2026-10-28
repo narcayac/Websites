@@ -1,7 +1,32 @@
-# Agentes especializados en desarrollo web
+# Websites — agentes de Claude Code para desarrollo web
 
-Trece agentes en `.claude/agents/`. Claude los invoca solo cuando la tarea encaja con su
+Monorepo de proyectos web de la agencia. Cada sitio vive en su propia carpeta de primer
+nivel, y el repositorio incluye **trece agentes especializados** de Claude Code que cubren
+el ciclo completo de una web: del modelo de contenido a la revisión previa a publicar.
+
+Las convenciones de código y de stack están en [`CLAUDE.md`](CLAUDE.md).
+
+## Cómo se usan
+
+Los agentes están en `.claude/agents/`. Claude los invoca solo cuando la tarea encaja con su
 `description`, o puedes pedirlos por nombre: «usa el agente `seo-tecnico` en /clinica-dental».
+
+Al trabajar dentro de este repositorio están disponibles sin instalar nada, también en las
+subcarpetas de cada proyecto.
+
+### Usarlos en otros proyectos
+
+Van empaquetados como plugin, así que se pueden instalar en cualquier máquina y cualquier
+proyecto:
+
+```
+/plugin marketplace add narcayac/Websites
+/plugin install web-agents@narcayac
+```
+
+Se actualizan con `/plugin update web-agents`. El plugin apunta a esta misma carpeta
+`.claude/`, así que no hay copias duplicadas que se desincronicen: se editan los agentes
+aquí y quien los tenga instalados recibe el cambio.
 
 ## Construcción
 
@@ -83,7 +108,8 @@ toque.
 Cada archivo es Markdown con frontmatter YAML: `name`, `description`, `tools`, `model`.
 La `description` es lo que decide si Claude lo elige solo, así que escríbela en términos de
 **cuándo** usarlo. `tools` restringe lo que puede hacer. Para crear uno nuevo también sirve
-el comando `/agents`.
+el comando `/agents`. Si añades uno, no lo pongas en `agents/` como README ni como notas:
+esa carpeta solo admite agentes, y cualquier otro `.md` se cargaría como un agente fantasma.
 
 Cuidado con multiplicarlos: si dos agentes tienen descripciones que se pisan, Claude elige
 peor. Antes de añadir el catorce, comprueba que ninguno de los trece ya lo cubre.

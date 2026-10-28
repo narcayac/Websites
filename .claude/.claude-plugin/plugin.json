@@ -1,0 +1,19 @@
+{
+  "name": "web-agents",
+  "version": "1.0.0",
+  "description": "Trece agentes especializados en desarrollo web: maquetación, diseño, copy, animaciones, formularios, CMS, SEO, rendimiento, accesibilidad, analítica, QA responsive, migraciones y revisión previa a publicar.",
+  "author": {
+    "name": "Narcayac"
+  },
+  "keywords": [
+    "web",
+    "frontend",
+    "astro",
+    "nextjs",
+    "wordpress",
+    "seo",
+    "accesibilidad",
+    "core-web-vitals",
+    "animaciones"
+  ]
+}

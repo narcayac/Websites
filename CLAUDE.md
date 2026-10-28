@@ -40,4 +40,6 @@ Están en `.claude/agents/`. Trece, en dos grupos:
 - **Revisión y lanzamiento**: `responsive-qa`, `accesibilidad-a11y`, `seo-tecnico`,
   `performance-cwv`, `analitica-tracking`, `deploy-check`, `migracion-relanzamiento`.
 
-Ver `.claude/agents/README.md` para cuál usar, en qué orden y quién hace qué cuando se solapan.
+Ver el [`README.md`](README.md) de la raíz para cuál usar, en qué orden y quién hace qué
+cuando se solapan. Van también empaquetados como plugin `web-agents` para poder usarlos
+en otros proyectos.

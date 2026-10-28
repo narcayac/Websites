@@ -1,0 +1,25 @@
+{
+  "name": "narcayac",
+  "owner": {
+    "name": "Narcayac"
+  },
+  "metadata": {
+    "description": "Agentes y utilidades de Claude Code para proyectos web de la agencia",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "web-agents",
+      "source": "./.claude",
+      "description": "Trece agentes especializados en desarrollo web, de la maquetación a la publicación",
+      "version": "1.0.0",
+      "keywords": [
+        "web",
+        "frontend",
+        "seo",
+        "accesibilidad",
+        "animaciones"
+      ]
+    }
+  ]
+}
